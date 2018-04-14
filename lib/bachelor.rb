@@ -4,9 +4,9 @@ def get_first_name_of_season_winner(data, season)
       contestants.each do |key, value|
         if value == "winner"
 
-          return key["name"]
+          return key["name"].first
         end
-      end 
+      end
 
   end
 
