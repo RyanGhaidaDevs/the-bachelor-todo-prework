@@ -36,18 +36,17 @@ end
 def count_contestants_by_hometown(data, hometown)
 counter  = 0
 
-  while counter <30 
+
   data.each do |season, info|
     info.each do |contestants|
       contestants.each do |key, value|
         if value == hometown
           counter +=1
         end
-        return counter
       end
     end
   end
-
+return counter 
 end
 
 def get_occupation(data, hometown)
