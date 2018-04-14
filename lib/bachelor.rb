@@ -66,15 +66,14 @@ def get_average_age_for_season(data, given_season)
 
   age_arr = []
 
-  data[given_season].each do | info|
-    info.each do |contestants|
-      contestants.each do |key, value|
+  data[given_season].each do |info|
+      info.each do |key, value|
         if key == "age"
           age_arr << value
         end
       end
     end
-  end
+  
  arr = age_arr.collect { |x| x.to_f }
 
  return (arr.inject(0, &:+)/arr.length).round
