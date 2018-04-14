@@ -3,7 +3,7 @@ name = ""
   data[season].each do |contestants|
       contestants.each do |key, value|
         if value == "Winner"
-          name = key["name"]
+          name = contestants["name"]
 
           return name.split(" ")
 
