@@ -16,13 +16,13 @@ name = ""
 end
 
 def get_contestant_name(data, occupation)
-  data.each do |contestant|
+  data.each do |season, info|
 
-    contestant.each do |key, value|
+    info.each do |key, value|
 
       if value == occupation
 
-        return contestants["name"]
+        return info["name"]
 
       end
     end
